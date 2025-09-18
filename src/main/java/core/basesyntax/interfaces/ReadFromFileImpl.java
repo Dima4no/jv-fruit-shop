@@ -1,7 +1,6 @@
 package core.basesyntax.interfaces;
 
 import core.basesyntax.FruitRecord;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -27,6 +26,6 @@ public class ReadFromFileImpl implements ReadFromFile {
         } catch (IOException e) {
             throw new RuntimeException("Can't read data from this file!");
         }
-            return records;
+        return records;
     }
 }

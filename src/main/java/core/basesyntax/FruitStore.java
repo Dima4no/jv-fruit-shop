@@ -1,11 +1,18 @@
 package core.basesyntax;
 
-import core.basesyntax.interfaces.*;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import core.basesyntax.interfaces.ReadFromFile;
+import core.basesyntax.interfaces.ReadFromFileImpl;
+import core.basesyntax.interfaces.FruitOperation;
+import core.basesyntax.interfaces.FruitOperationImpl;
+import core.basesyntax.interfaces.ReportGenerator;
+import core.basesyntax.interfaces.ReportGeneratorImpl;
+import core.basesyntax.interfaces.WriteToFile;
+import core.basesyntax.interfaces.WriteToFileImpl;
+import core.basesyntax.FruitRecord;
 
 /**
  * Feel free to remove this class and create your own.
@@ -18,7 +25,7 @@ public class FruitStore {
         Map<String, Integer> stock = new HashMap<>();
 
         ReadFromFile reader = new ReadFromFileImpl();
-        List<FruitRecord> records = new ArrayList<>();
+        List<FruitRecord> records = reader.read(inputFile);
 
         FruitOperation fruitOperation = new FruitOperationImpl();
         for (FruitRecord record : records) {
