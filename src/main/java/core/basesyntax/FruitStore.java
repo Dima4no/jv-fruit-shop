@@ -1,9 +1,5 @@
 package core.basesyntax;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import core.basesyntax.interfaces.ReadFromFile;
 import core.basesyntax.interfaces.ReadFromFileImpl;
 import core.basesyntax.interfaces.FruitOperation;
@@ -12,7 +8,9 @@ import core.basesyntax.interfaces.ReportGenerator;
 import core.basesyntax.interfaces.ReportGeneratorImpl;
 import core.basesyntax.interfaces.WriteToFile;
 import core.basesyntax.interfaces.WriteToFileImpl;
-import core.basesyntax.FruitRecord;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Feel free to remove this class and create your own.
