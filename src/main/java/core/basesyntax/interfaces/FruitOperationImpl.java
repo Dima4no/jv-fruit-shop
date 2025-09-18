@@ -11,7 +11,7 @@ public class FruitOperationImpl implements FruitOperation {
         stock.putIfAbsent(record.getFruit(), 0);
         int current = stock.get(record.getFruit());
 
-        switch(record.getOperation()) {
+        switch (record.getOperation()) {
             case "b":
                 stock.put(record.getFruit(), record.getQuantity());
                 break;
@@ -22,6 +22,8 @@ public class FruitOperationImpl implements FruitOperation {
             case "p":
                 stock.put(record.getFruit(), current - record.getQuantity());
                 break;
+            default:
+                System.out.println("There is a problem with data!");
         }
     }
 }

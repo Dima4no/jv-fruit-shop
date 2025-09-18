@@ -1,9 +1,9 @@
 package core.basesyntax;
 
-import core.basesyntax.interfaces.ReadFromFile;
-import core.basesyntax.interfaces.ReadFromFileImpl;
 import core.basesyntax.interfaces.FruitOperation;
 import core.basesyntax.interfaces.FruitOperationImpl;
+import core.basesyntax.interfaces.ReadFromFile;
+import core.basesyntax.interfaces.ReadFromFileImpl;
 import core.basesyntax.interfaces.ReportGenerator;
 import core.basesyntax.interfaces.ReportGeneratorImpl;
 import core.basesyntax.interfaces.WriteToFile;
